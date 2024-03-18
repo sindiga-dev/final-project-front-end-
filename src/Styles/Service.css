@@ -1,0 +1,31 @@
+.service{
+    width: 80%;
+    margin: 3rem auto;
+    margin-block: 8rem;
+    background-color: #e2e8f0;
+    
+  }
+  
+  .service_box{
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+   
+  }
+  .service_box_item{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  
+  }
+  #s-img{
+    height: 100px;
+    border-radius: 8%;
+    align-items: center;
+    margin-left: 100px;
+  }
+  #g-serv{
+   
+    margin-left: 600px;
+  }
+  

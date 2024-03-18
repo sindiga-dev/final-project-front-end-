@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.PhoneInputInput{
+  height: 40px;
+  padding:0px
+}
+#testimonial:hover{
+  transform: rotateX(45deg) rotateZ(-25deg);
+  transform-style: preserve-3d;
+  transition: .3s;
+  vertical-align: bottom;
+  filter: grayscale(50%);
+  transition: .3s;
+}
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+  align-items: center;
+	line-height: 200px;
+	font-size: 4em;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+.box1 {
+	display: flex;
+}
+
+.box1 .inner2 {
+	width: 400px;
+	height: 200px;
+  align-items: center;
+	line-height: 200px;
+	font-size: 4em;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box1 .inner2:first-child {
+	color: green;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box1 .inner2:last-child {
+	color: greenyellow;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box1 .inner2 span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box1 .inner2:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
